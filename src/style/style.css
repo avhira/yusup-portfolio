@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+}
+a {
+  color: #fff;
+}
+.container {
+  padding: 1rem 2rem;
+  display: grid;
+  place-items: center;
+}
+.home-title {
+  text-align: center;
+  padding: 10px 1px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.logo {
+  width: 12rem;
+  height: 12rem;
+  margin-top: -1rem;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.wrap-home_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+.wrap-home_btn {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.wrap-home_item:hover .home-btn {
+  filter: blur(4px);
+}
+.wrap-home_item .home-btn:hover {
+  filter: blur(0);
+}
+.home-btn {
+  display: flex;
+  padding-left: 4rem;
+  gap: 1rem;
+  border-radius: 1rem;
+  background-color: #0081dd;
+  color: #fff;
+}
+.home-btn h1 {
+  font-weight: 300;
+}
+
+.title-project {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: -1rem 0 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 183, 255, 0.3);
+}
+.back {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  color: #000000;
+  background: rgba(0, 183, 255, 0.3);
+}
+.back:hover {
+  background: rgba(0, 183, 255, 0.9);
+}
+/* Card start */
+.wrap-card {
+  gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+.banner {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  object-fit: cover;
+}
+.card {
+  box-shadow: 3px 3px 10px rgb(169, 169, 169);
+  border-radius: 1rem;
+  padding-bottom: 2rem;
+}
+.card-data {
+  margin: 0 2rem;
+}
+.card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  background: #00bbff;
+}
+.card-btn:hover {
+  background: #0081dd;
+}
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.tech span {
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+/* Card end */
+.html {
+  background: #ff6200;
+}
+.css {
+  background: #0000ff;
+}
+.Javascript {
+  background: #ffd700;
+}
+.Tailwind {
+  background: #00bbff;
+}
+.Bootstrap {
+  background: #ffc0cb;
+}
+.SASS {
+  background: #d87093;
+}
+.React {
+  background: #0081dd;
+}
+.vite {
+  background: #ea00ff;
+}
+.API {
+  background: #adff2f;
+}
+.Spline {
+  background: #ff78a5;
+}
+.txt-white {
+  color: white;
+}
+/* bg animation start */
+section {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  height: 65%;
+  width: 100%;
+  background: #00bbff;
+  overflow: hidden;
+}
+section .air {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px;
+}
+section .air.air1 {
+  animation: wave 20s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+section .air.air2 {
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+section .air.air3 {
+  animation: wave 20s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+section .air.air4 {
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes wave {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes wave2 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+/* bg animation end */

@@ -1,0 +1,19 @@
+@media (min-width: 670px) {
+  .home-title {
+    padding: 12px 24px;
+  }
+  .wrap-home_item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .wrap-home_btn {
+    width: 300px;
+  }
+
+  .banner {
+    height: 50%;
+  }
+}
+/* @media (min-width: 1024px) {
+} */
