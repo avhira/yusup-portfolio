@@ -5,7 +5,6 @@ import img2 from '../img/avhira-cafe.png';
 import img3 from '../img/aroma-bumi.png';
 import img4 from '../img/Elemes-id.png';
 import img5 from '../img/movie.png';
-import img6 from '../img/bio-spline.png';
 import img7 from '../img/leren.png';
 import img8 from '../img/avhira-foods.png';
 import img9 from '../img/Pokemon-API.png';
@@ -26,7 +25,6 @@ export default function Cards() {
     { image: img11, title: 'Summer Exploring', technologies: ['React', 'Tailwind', 'Javascript', 'vite'], link: 'https://avhira.github.io/summer-exploring/' },
     { image: img7, title: 'LEREN Project', technologies: ['html', 'css', 'Javascript'], link: 'https://avhira.github.io/project-leren/' },
     { image: img8, title: 'Foods Fun', technologies: ['React', 'Tailwind', 'Javascript', 'vite'], link: 'https://avhira.github.io/order-foods/' },
-    { image: img6, title: 'Bio-Spline', technologies: ['React', 'SASS', 'Javascript', 'vite', 'Spline'], link: 'https://avhira.github.io/bio-spline/' },
     { image: img9, title: 'Pokemon Cards', technologies: ['html', 'css', 'Javascript', 'API'], link: 'https://avhira.github.io/pokemon-cards/' },
     { image: img10, title: 'Progate Ninja', technologies: ['html', 'css'], link: 'https://avhira.github.io/progate-ninja/' },
   ];
