@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Backs from '../img/assets/back.svg';
+import Backs from '@/img/assets/back.svg';
 
 export default function Back() {
   return (

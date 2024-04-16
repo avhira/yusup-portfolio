@@ -1,18 +1,18 @@
-import Html from '../../img/technology/html.png';
-import Css from '../../img/technology/css.png';
-import Javascript from '../../img/technology/javascript.png';
-import Reacts from '../../img/technology/react.png';
-import Tailwind from '../../img/technology/tailwind.png';
-import Bootstrap from '../../img/technology/bootstrap.png';
-import Sass from '../../img/technology/sass.png';
-import Nodejs from '../../img/technology/nodejs.png';
-import Express from '../../img/technology/express.png';
-import Nextjs from '../../img/technology/nextjs.png';
-import Typescript from '../../img/technology/typescript.png';
-import Mysql from '../../img/technology/mysql.png';
-import Mongodb from '../../img/technology/mongodb.png';
-import Firebase from '../../img/technology/firebase.png';
-import Redux from '../../img/technology/redux.png';
+import Html from '@/img/technology/html.png';
+import Css from '@/img/technology/css.png';
+import Javascript from '@/img/technology/javascript.png';
+import Reacts from '@/img/technology/react.png';
+import Tailwind from '@/img/technology/tailwind.png';
+import Bootstrap from '@/img/technology/bootstrap.png';
+import Sass from '@/img/technology/sass.png';
+import Nodejs from '@/img/technology/nodejs.png';
+import Express from '@/img/technology/express.png';
+import Nextjs from '@/img/technology/nextjs.png';
+import Typescript from '@/img/technology/typescript.png';
+import Mysql from '@/img/technology/mysql.png';
+import Mongodb from '@/img/technology/mongodb.png';
+import Firebase from '@/img/technology/firebase.png';
+import Redux from '@/img/technology/redux.png';
 
 export default function Technology() {
   return (

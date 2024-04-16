@@ -1,4 +1,4 @@
-import logo from '../img/Avhira.png';
+import logo from '@/img/Avhira.png';
 
 function LogoHome() {
   return (

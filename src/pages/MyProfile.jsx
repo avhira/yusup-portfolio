@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import Back from '../component/Back.jsx';
-import DataDescription from '../component/Profile/DataDescription.jsx';
-import Technology from '../component/Profile/Technology.jsx';
-import Contact from '../component/Profile/Contact.jsx';
+import Back from '@/component/Back.jsx';
+import DataDescription from '@/component/Profile/DataDescription.jsx';
+import Technology from '@/component/Profile/Technology.jsx';
+import Contact from '@/component/Profile/Contact.jsx';
+import BarBtn from '@/component/Profile/BarBtn';
 
 export default function MyProfile() {
   const [showType, setShowType] = useState('profile');
@@ -19,6 +20,7 @@ export default function MyProfile() {
         return null;
     }
   };
+
   const getButtonStyle = (type) => {
     return showType === type ? { backgroundColor: '#0700dd' } : null;
   };
@@ -26,17 +28,7 @@ export default function MyProfile() {
   return (
     <div className="background-profile">
       <Back />
-      <div className="profile-bar">
-        <button style={getButtonStyle('profile')} onClick={() => setShowType('profile')}>
-          PROFILE
-        </button>
-        <button style={getButtonStyle('contact')} onClick={() => setShowType('contact')}>
-          CONTACT
-        </button>
-        <button style={getButtonStyle('tech')} onClick={() => setShowType('tech')}>
-          TECHNOLOGY
-        </button>
-      </div>
+      <BarBtn setShowType={setShowType} getButtonStyle={getButtonStyle} />
       <section className="profile">{renderContent()}</section>
     </div>
   );

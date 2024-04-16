@@ -1,4 +1,4 @@
-import page from '../img/projects/avhira-foods.png';
+import page from '@/img/projects/avhira-foods.png';
 const profiles = [
   {
     image: page,

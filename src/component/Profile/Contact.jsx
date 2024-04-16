@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { validateFormData } from '../../data/validateFormData.js';
+import { validateFormData } from '@/data/validateFormData.js';
 
 const Contact = () => {
   const [formData, setFormData] = useState({

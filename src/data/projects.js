@@ -1,22 +1,22 @@
-import html from '../img/technology/html.png';
-import css from '../img/technology/css.png';
-import Javascript from '../img/technology/javascript.png';
-import React from '../img/technology/react.png';
-import Bootstrap from '../img/technology/bootstrap.png';
-import Tailwind from '../img/technology/tailwind.png';
+import html from '@/img/technology/html.png';
+import css from '@/img/technology/css.png';
+import Javascript from '@/img/technology/javascript.png';
+import React from '@/img/technology/react.png';
+import Bootstrap from '@/img/technology/bootstrap.png';
+import Tailwind from '@/img/technology/tailwind.png';
 
-import img1 from '../img/projects/Profile-Project.png';
-import img2 from '../img/projects/avhira-cafe.png';
-import img3 from '../img/projects/aroma-bumi.png';
-import img4 from '../img/projects/Elemes-id.png';
-import img5 from '../img/projects/movie.png';
-import img7 from '../img/projects/leren.png';
-import img8 from '../img/projects/avhira-foods.png';
-import img9 from '../img/projects/Pokemon-API.png';
-import img10 from '../img/projects/progate-ninja.png';
-import img11 from '../img/projects/summer-exploring.png';
-import img12 from '../img/projects/weddings.jpg';
-import img13 from '../img/projects/webfilm.png';
+import img1 from '@/img/projects/Profile-Project.png';
+import img2 from '@/img/projects/avhira-cafe.png';
+import img3 from '@/img/projects/aroma-bumi.png';
+import img4 from '@/img/projects/Elemes-id.png';
+import img5 from '@/img/projects/movie.png';
+import img7 from '@/img/projects/leren.png';
+import img8 from '@/img/projects/avhira-foods.png';
+import img9 from '@/img/projects/Pokemon-API.png';
+import img10 from '@/img/projects/progate-ninja.png';
+import img11 from '@/img/projects/summer-exploring.png';
+import img12 from '@/img/projects/weddings.jpg';
+import img13 from '@/img/projects/webfilm.png';
 
 export const projects = [
   {

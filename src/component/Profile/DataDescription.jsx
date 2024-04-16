@@ -1,5 +1,5 @@
-import Avhira from '../../img/man.png';
-import Download from '../../img/assets/download.png';
+import Avhira from '@/img/man.png';
+import Download from '@/img/assets/download.png';
 
 export default function DataDescription() {
   return (
