@@ -7,21 +7,37 @@ import Contact from '../component/Profile/Contact.jsx';
 export default function MyProfile() {
   const [showType, setShowType] = useState('profile');
 
+  const renderContent = () => {
+    switch (showType) {
+      case 'profile':
+        return <DataDescription />;
+      case 'contact':
+        return <Contact />;
+      case 'tech':
+        return <Technology />;
+      default:
+        return null;
+    }
+  };
+  const getButtonStyle = (type) => {
+    return showType === type ? { backgroundColor: '#0700dd' } : null;
+  };
+
   return (
     <div className="background-profile">
       <Back />
       <div className="profile-bar">
-        <button style={{ backgroundColor: showType === 'profile' ? '#0700dd' : null }} onClick={() => setShowType('profile')}>
+        <button style={getButtonStyle('profile')} onClick={() => setShowType('profile')}>
           PROFILE
         </button>
-        <button style={{ backgroundColor: showType === 'contact' ? '#0700dd' : null }} onClick={() => setShowType('contact')}>
+        <button style={getButtonStyle('contact')} onClick={() => setShowType('contact')}>
           CONTACT
         </button>
-        <button style={{ backgroundColor: showType === 'tech' ? '#0700dd' : null }} onClick={() => setShowType('tech')}>
+        <button style={getButtonStyle('tech')} onClick={() => setShowType('tech')}>
           TECHNOLOGY
         </button>
       </div>
-      <section className="profile">{showType === 'profile' ? <DataDescription /> : showType === 'contact' ? <Contact /> : <Technology />}</section>
+      <section className="profile">{renderContent()}</section>
     </div>
   );
 }

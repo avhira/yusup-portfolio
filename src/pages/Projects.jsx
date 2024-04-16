@@ -1,6 +1,6 @@
 import Back from '../component/Back.jsx';
-import Card from '../component/Cards.jsx';
 import { projects } from '../data/projects.js';
+import Card from '../component/Card.jsx';
 
 export default function Projects() {
   return (
