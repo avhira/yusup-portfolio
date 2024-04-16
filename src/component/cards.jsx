@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
-import { projects } from '../data/projects.js';
-
-export default function Cards() {
+export default function Cards({ projects }) {
   return (
     <>
       <div className="wrap-card">
