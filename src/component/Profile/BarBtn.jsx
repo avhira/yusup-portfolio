@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export const BarBtn = ({ setShowType, getButtonStyle }) => {
+const BarBtn = ({ setShowType, getButtonStyle }) => {
   return (
     <div className="profile-bar">
       <button style={getButtonStyle('profile')} onClick={() => setShowType('profile')}>
@@ -14,3 +14,5 @@ export const BarBtn = ({ setShowType, getButtonStyle }) => {
     </div>
   );
 };
+
+export default BarBtn;
