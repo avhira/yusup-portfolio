@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Back from '../component/Back';
-import ProfileBarLinks from '../component/Profile/profileBarLinks';
+import ProfileBarLinks from '../component/Profile/ProfileBarLinks';
 import DataDescription from '../component/Profile/DataDescription';
 import Technology from '../component/Profile/Technology';
 import Contact from '../component/Profile/Contact';

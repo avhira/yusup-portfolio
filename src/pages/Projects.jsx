@@ -1,5 +1,5 @@
 import Back from '../component/Back';
-import Card from '../component/cards';
+import Card from '../component/Cards';
 
 export default function Projects() {
   return (
