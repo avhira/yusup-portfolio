@@ -1,5 +1,5 @@
-import Back from '../component/Back';
-import Card from '../component/Cards';
+import Back from '../component/Back.jsx';
+import Card from '../component/Cards.jsx';
 import { projects } from '../data/projects.js';
 
 export default function Projects() {

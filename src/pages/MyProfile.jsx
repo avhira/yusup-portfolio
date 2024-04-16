@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Back from '../component/Back';
-import DataDescription from '../component/Profile/DataDescription';
-import Technology from '../component/Profile/Technology';
-import Contact from '../component/Profile/Contact';
+import Back from '../component/Back.jsx';
+import DataDescription from '../component/Profile/DataDescription.jsx';
+import Technology from '../component/Profile/Technology.jsx';
+import Contact from '../component/Profile/Contact.jsx';
 
 export default function MyProfile() {
   const [showType, setShowType] = useState('profile');
