@@ -1,5 +1,6 @@
 import Avhira from '@/img/man.png';
 import Download from '@/img/assets/download.png';
+import DownladCv from '../DownloadCv';
 
 export default function DataDescription() {
   return (
@@ -12,10 +13,7 @@ export default function DataDescription() {
           <br />
           So, Let&apos;s connect on LinkedIn or you can contact me at my email.
         </h4>
-        <button>
-          <span>Resume</span>
-          <img src={Download} alt="download" />
-        </button>
+        <DownladCv text={'Resume'} img={Download} />
       </div>
       <img src={Avhira} alt="avhira" />
     </div>

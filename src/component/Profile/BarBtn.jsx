@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 const BarBtn = ({ setShowType, getButtonStyle }) => {
   return (
     <div className="profile-bar">
