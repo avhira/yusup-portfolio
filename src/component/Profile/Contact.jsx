@@ -37,9 +37,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-wrap">
+    <div className="contact-wrap ">
       <h2>Kontak Kami</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="animate__animated animate__fadeInUp">
         <div>
           <label htmlFor="name">Nama :</label>
           <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Name..." />
