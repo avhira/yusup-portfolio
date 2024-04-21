@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { validateFormData } from '@/data/validateFormData.js';
+import ModalComponent from '../ModalComponent.jsx';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -55,7 +56,7 @@ const Contact = () => {
           <textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Message..."></textarea>
           {errors.message && <span style={{ color: 'red' }}>{errors.message}</span>}
         </div>
-        <button type="submit">Kirim</button>
+        <ModalComponent />
       </form>
     </div>
   );
