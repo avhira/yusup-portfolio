@@ -2036,11 +2036,6 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-tingle.js@^0.16.0:
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/tingle.js/-/tingle.js-0.16.0.tgz#1ac35f91315271c47cb6bb7299d0b327ac7539ea"
-  integrity sha512-xV4F2j7+QMxDfzuX59KhxiWKeAgI/QSC8o7k9rQu8hZD8TZefMTViq7l07DIcVDb30IlAPlyFRs6SnD1Fup6hA==
-
 to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"

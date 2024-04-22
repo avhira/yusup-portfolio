@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { validateFormData } from '@/data/validateFormData.js';
-import ModalComponent from '../ModalComponent.jsx';
+import ModalComponent from '../ModalComponent';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,11 +10,11 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [showModal, setShowModal] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-
     if (errors[name]) {
       setErrors({ ...errors, [name]: '' });
     }
@@ -26,17 +26,13 @@ const Contact = () => {
     if (Object.keys(validationErrors).length === 0) {
       // Kirim data
       console.log('Data yang akan dikirim:', formData);
-      setFormData({
-        name: '',
-        email: '',
-        message: '',
-      });
+      setShowModal(true);
       setErrors({});
     } else {
       setErrors(validationErrors);
+      setShowModal(true);
     }
   };
-
   return (
     <div className="contact-wrap ">
       <h2>Kontak Kami</h2>
@@ -56,8 +52,9 @@ const Contact = () => {
           <textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Message..."></textarea>
           {errors.message && <span style={{ color: 'red' }}>{errors.message}</span>}
         </div>
-        <ModalComponent />
+        <button type="submit">kirim</button>
       </form>
+      <ModalComponent formData={formData} setFormData={setFormData} showModal={showModal} setShowModal={setShowModal} errors={errors} />
     </div>
   );
 };
