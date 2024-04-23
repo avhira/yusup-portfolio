@@ -167,8 +167,8 @@ a {
 .data-wrap h4 {
   font-size: 1.4rem;
 }
-.data-wrap button,
-.contact-wrap button {
+.data-wrap .btn,
+.contact-wrap .btn {
   width: 10rem;
   padding: 12px 24px;
   font-size: 1.5rem;
@@ -180,8 +180,8 @@ a {
   border-radius: 1rem;
   border: 4px #0081dd solid;
 }
-.data-wrap button:hover,
-.contact-wrap button:hover {
+.data-wrap .btn:hover,
+.contact-wrap .btn:hover {
   transition: 0.2s ease;
   background: #6dd3ff;
   border: 4px #ffffff solid;
@@ -362,7 +362,7 @@ form textarea {
 .modal-content h2 {
   width: 80%;
   text-align: start;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.3rem;
 }
 .modal-content .wrap-input {
   display: flex;

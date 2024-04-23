@@ -1,3 +1,4 @@
+import ToastMessage, { notify } from '@/component/utilities/ReactToast';
 import { useState, useEffect } from 'react';
 
 const ModalComponent = ({ formData, setFormData, showModal, setShowModal, errors }) => {
@@ -30,7 +31,9 @@ const ModalComponent = ({ formData, setFormData, showModal, setShowModal, errors
         </div>
       ))}
       <div className="modal-btn">
-        <button onClick={handleConfirm}>Yeah</button>
+        <button className="btn" onClick={handleConfirm}>
+          Yeah
+        </button>
       </div>
     </>
   );
@@ -55,17 +58,23 @@ const ModalComponent = ({ formData, setFormData, showModal, setShowModal, errors
     if (confirm) {
       onClose();
       setConfirm(!confirm);
-      console.log(confirm);
       console.log('Data dikirim:', formData); // kirim data
       setFormData({
         name: '',
         email: '',
         message: '',
       });
+      notify(); // React-Toast
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [confirm]);
-  return <div>{showModal && renderModal(header, modalContent, backgroundColor)}</div>;
+
+  return (
+    <div>
+      {showModal && renderModal(header, modalContent, backgroundColor)}
+      <ToastMessage />
+    </div>
+  );
 };
 
 export default ModalComponent;

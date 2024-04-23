@@ -12,7 +12,7 @@ export default function DownladCv({ text, img }) {
   };
 
   return (
-    <button onClick={downloadFile}>
+    <button className="btn" onClick={downloadFile}>
       <span>{text}</span>
       <img src={img} />
     </button>

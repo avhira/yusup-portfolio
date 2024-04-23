@@ -59,12 +59,12 @@
   .data-wrap .data {
     gap: 3rem;
   }
-  .data-wrap button,
-  .contact-wrap button {
+  .data-wrap .btn,
+  .contact-wrap .btn {
     width: 20rem;
   }
-  .data-wrap button:hover,
-  .contact-wrap button:hover {
+  .data-wrap .btn:hover,
+  .contact-wrap .btn:hover {
     letter-spacing: 3px;
   }
   .tech-wrap h1 {

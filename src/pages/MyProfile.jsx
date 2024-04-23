@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Back from '@/component/Back.jsx';
+import Back from '@/component/utilities/Back.jsx';
 import DataDescription from '@/component/Profile/DataDescription.jsx';
 import Technology from '@/component/Profile/Technology.jsx';
 import Contact from '@/component/Profile/Contact.jsx';

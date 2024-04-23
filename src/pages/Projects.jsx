@@ -1,4 +1,4 @@
-import Back from '@/component/Back.jsx';
+import Back from '@/component/utilities/Back.jsx';
 import { projects } from '@/data/projects.js';
 import Card from '@/component/Card.jsx';
 
