@@ -56,6 +56,7 @@ const ModalComponent = ({ formData, setFormData, showModal, setShowModal, errors
       onClose();
       setConfirm(!confirm);
       console.log(confirm);
+      console.log('Data dikirim:', formData); // kirim data
       setFormData({
         name: '',
         email: '',

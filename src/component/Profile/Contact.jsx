@@ -23,14 +23,14 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validateFormData(formData);
+    console.log('ini submit');
+
     if (Object.keys(validationErrors).length === 0) {
-      // Kirim data
-      console.log('Data yang akan dikirim:', formData);
       setShowModal(true);
       setErrors({});
     } else {
-      setErrors(validationErrors);
       setShowModal(true);
+      setErrors(validationErrors);
     }
   };
   return (
@@ -40,17 +40,17 @@ const Contact = () => {
         <div>
           <label htmlFor="name">Nama :</label>
           <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Name..." />
-          {errors.name && <span style={{ color: 'red' }}>{errors.name}</span>}
+          {errors.name && <span style={{ color: '#ff0000' }}>{errors.name}</span>}
         </div>
         <div>
           <label htmlFor="email">Email :</label>
           <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email..." />
-          {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
+          {errors.email && <span style={{ color: '#ff0000' }}>{errors.email}</span>}
         </div>
         <div>
           <label htmlFor="message">Pesan :</label>
           <textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Message..."></textarea>
-          {errors.message && <span style={{ color: 'red' }}>{errors.message}</span>}
+          {errors.message && <span style={{ color: '#ff0000' }}>{errors.message}</span>}
         </div>
         <button type="submit">kirim</button>
       </form>
