@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { validateFormData } from '@/data/validateFormData.js';
-import ModalComponent from '../ModalComponent';
+import ModalComponent from '@/component/ModalComponent';
 
 const Contact = () => {
   const [showModal, setShowModal] = useState(false);
@@ -8,6 +8,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '',
     message: '',
   });
 
@@ -47,6 +48,11 @@ const Contact = () => {
             <label htmlFor="email">Email :</label>
             <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email..." />
             {errors.email && ErrorSpan(errors.email)}
+          </div>
+          <div>
+            <label htmlFor="subject">Subjek Email :</label>
+            <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} placeholder="Subjek Email..." />
+            {errors.subject && ErrorSpan(errors.subject)}
           </div>
           <div>
             <label htmlFor="message">Pesan :</label>

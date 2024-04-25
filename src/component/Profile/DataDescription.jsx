@@ -1,6 +1,6 @@
 import Avhira from '@/img/man.png';
 import Download from '@/img/assets/download.png';
-import DownladCv from '../DownloadCv.jsx';
+import DownladCv from '@/component/DownloadCv.jsx';
 
 export default function DataDescription() {
   return (

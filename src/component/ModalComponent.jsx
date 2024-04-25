@@ -1,5 +1,6 @@
-import ToastMessage, { notify } from '@/component/utilities/ReactToast';
 import { useState, useEffect } from 'react';
+import ToastMessage, { notify } from '@/component/utilities/ReactToast';
+import emailjs from '@emailjs/browser';
 
 const ModalComponent = ({ formData, setFormData, showModal, setShowModal, errors }) => {
   const [confirm, setConfirm] = useState(false);
@@ -27,7 +28,7 @@ const ModalComponent = ({ formData, setFormData, showModal, setShowModal, errors
     <>
       {Object.entries(formData).map(([key, value], i) => (
         <div className="wrap-input" key={i}>
-          <h4>{`${key}: ${value}`}</h4>
+          <h4>{`${key} : ${value}`}</h4>
         </div>
       ))}
       <div className="modal-btn">
@@ -51,17 +52,38 @@ const ModalComponent = ({ formData, setFormData, showModal, setShowModal, errors
   const ErrorObj = errors && Object.keys(errors).length > 0;
 
   const modalContent = ErrorObj ? renderErrors() : renderFormData();
-  const header = ErrorObj ? 'Benerin dong cuy' : 'Are you sure want to send this data ?';
+  const header = ErrorObj ? 'Benerin lagi ya' : 'apakah datanya sudah benar ?';
   const backgroundColor = ErrorObj ? '#ff0000' : '#002fff';
+
+  const EMAILJS_API_KEY = import.meta.env.VITE_EMAILJS_API_KEY_ID;
+  const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+
+  const templateParams = {
+    from_name: formData.name,
+    from_email: formData.email,
+    subject: formData.subject,
+    message: formData.message,
+  };
 
   useEffect(() => {
     if (confirm) {
       onClose();
       setConfirm(!confirm);
-      console.log('Data dikirim:', formData); // kirim data
+
+      emailjs
+        .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_API_KEY)
+        .then((response) => {
+          console.log('Email sent successfully!', response, formData);
+        })
+        .catch((error) => {
+          console.error('Failed to send email:', error);
+        });
+
       setFormData({
         name: '',
         email: '',
+        subject: '',
         message: '',
       });
       notify(); // React-Toast

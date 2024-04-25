@@ -8,6 +8,9 @@ export const validateFormData = (data) => {
   } else if (!isValidEmail(data.email)) {
     errors.email = 'Email tidak valid';
   }
+  if (!data.subject.trim()) {
+    errors.subject = 'Subjek harus diisi';
+  }
   if (!data.message.trim()) {
     errors.message = 'Pesan harus diisi';
   }
