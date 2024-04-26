@@ -52,7 +52,7 @@ const ModalComponent = ({ formData, setFormData, showModal, setShowModal, errors
   const ErrorObj = errors && Object.keys(errors).length > 0;
 
   const modalContent = ErrorObj ? renderErrors() : renderFormData();
-  const header = ErrorObj ? 'Benerin lagi ya' : 'apakah datanya sudah benar ?';
+  const header = ErrorObj ? 'Benerin lagi ya' : 'Apakah data sudah benar ?';
   const backgroundColor = ErrorObj ? '#ff0000' : '#002fff';
 
   const EMAILJS_API_KEY = import.meta.env.VITE_EMAILJS_API_KEY_ID;
