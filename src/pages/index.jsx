@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import data from '@/data/link-home.js';
-import Wave from '@/component/utilities/Wave.jsx';
+import Wave from '@/utilities/Wave.jsx';
 import LogoHome from '@/component/LogoHome.jsx';
 
 export default function Home() {

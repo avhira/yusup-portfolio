@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import ToastMessage, { notify } from '@/component/utilities/ReactToast';
+import ToastMessage, { notify } from '@/utilities/ReactToast';
 import emailjs from '@emailjs/browser';
 
 const ModalComponent = ({ formData, setFormData, showModal, setShowModal, errors }) => {
