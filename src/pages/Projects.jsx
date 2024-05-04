@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { projects } from '@/data/projects.js';
-import Pagination from '@/component/pagination';
+import Pagination from '@/component/Pagination.jsx';
 import Back from '@/utilities/Back.jsx';
 import Card from '@/component/Projects/Card';
 
