@@ -17,6 +17,8 @@ import img10 from '@/img/projects/progate-ninja.png';
 import img11 from '@/img/projects/summer-exploring.png';
 import img12 from '@/img/projects/weddings.jpg';
 import img13 from '@/img/projects/webfilm.png';
+import img14 from '@/img/projects/note.jpg';
+import img15 from '@/img/projects/book-saver.jpg';
 
 export const projects = [
   {
@@ -42,6 +44,18 @@ export const projects = [
     title: 'Aroma Bumi Project',
     technologies: [React, css, Javascript],
     link: 'https://avhira.github.io/aroma-bumi/',
+  },
+  {
+    image: img14,
+    title: 'Note Avhira',
+    technologies: [React, css, Javascript],
+    link: 'https://note-avhira.vercel.app/',
+  },
+  {
+    image: img15,
+    title: 'Book saver',
+    technologies: [html, css, Javascript],
+    link: 'https://avhira.github.io/Book-saver/',
   },
   {
     image: img1,

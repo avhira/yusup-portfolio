@@ -8,7 +8,7 @@ export default function Projects() {
   const [items, setItems] = useState([]);
   const [pageCount, setPageCount] = useState(0);
   const [halaman, setHalaman] = useState(0);
-  const limit = 3;
+  const limit = 4;
 
   useEffect(() => {
     setPageCount(Math.ceil(projects.length / limit));

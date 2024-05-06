@@ -3,9 +3,15 @@ export default function Cards({ projects }) {
     <>
       <div className="wrap-card">
         {projects.map((project, i) => (
-          <div key={i} className="card">
+          <div
+            key={i}
+            className="card"
+          >
             <div className="image_container">
-              <img src={project.image} alt={project.title} />
+              <img
+                src={project.image}
+                alt={project.title}
+              />
             </div>
             <div className="technology">
               {project.technologies.map((tech, i) => (
@@ -17,8 +23,13 @@ export default function Cards({ projects }) {
             <div className="title">
               <span>{project.title}</span>
             </div>
-            <a href={project.link} className="cart-button" target="_blank" rel="noreferrer">
-              <span>See More</span>
+            <a
+              href={project.link}
+              className="cart-button"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>View Web</span>
             </a>
           </div>
         ))}
